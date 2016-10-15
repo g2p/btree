@@ -1,0 +1,7 @@
+description = "Btree data structure"
+version = "%%VERSION_NUM%%"
+requires = "ocaml-protoc"
+archive(byte) = "mr-btree.cma"
+archive(native) = "mr-btree.cmxa"
+plugin(byte) = "mr-btree.cma"
+plugin(native) = "mr-btree.cmxs"

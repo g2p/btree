@@ -1,3 +1,6 @@
+<src>: include
+true: -traverse
+true: package(unix,ocaml-protoc)
 true: bin_annot
 true: annot
 true: safe_string

@@ -1,0 +1,21 @@
+opam-version: "1.2"
+name: "mr-btree"
+maintainer: "Maxime Ransan <maxime.ransan@gmail.com>"
+authors: ["Maxime Ransan <maxime.ransan@gmail.com>"]
+homepage: "https://github.com/mransan/btree"
+dev-repo: "https://github.com/mransan/btree.git"
+bug-reports: "https://github.com/mransan/btree/issues"
+
+build: [
+  "ocaml" "pkg/pkg.ml" "build"
+            "--pinned" pinned ]
+build-test: [
+  [ "ocaml" "pkg/pkg.ml" "build" "--pinned" pinned "--tests" "true" ]
+  [ "ocaml" "pkg/pkg.ml" "test" ]]
+
+depends: [
+  "ocaml-protoc"
+  "ocamlbuild" {build}
+  "ocamlfind" {build}
+]
+available: [ocaml-version >= "4.02.0"]

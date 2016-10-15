@@ -1,7 +1,6 @@
-OCB_INC  += -I src/ -X js/
 #OCB_FLAGS += -ocamlopt ocamloptp
-OCB_FLAGS += -use-ocamlfind -pkgs unix,ocaml-protoc 
-OCB       = ocamlbuild $(OCB_FLAGS) $(OCB_INC)
+OCB_FLAGS += -use-ocamlfind
+OCB       = ocamlbuild $(OCB_FLAGS)
 
 .PHONY: all build perf unix test js 
 
