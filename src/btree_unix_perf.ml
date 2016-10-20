@@ -1,5 +1,5 @@
 
-module String10 = Encoding.MakeFixedLengthString(struct
+module String10 = Btree_encoding.MakeFixedLengthString(struct
   let length = 10
 end) 
 

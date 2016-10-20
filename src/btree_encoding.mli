@@ -22,7 +22,7 @@ module type CoreSig = sig
   val compare : t -> t -> int 
 end 
 
-(** {2 Int Encoding} *)
+(** {2 Int encoding} *)
 
 (** Utility module to encode integer value with little endian 32 bit 
     encoding.
@@ -36,7 +36,7 @@ module Int64 : sig
 
 end (* Int64 *)
 
-(** {2 String Encoding} *)
+(** {2 String encoding} *)
 
 module type StringLength = sig 
 

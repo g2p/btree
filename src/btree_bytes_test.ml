@@ -9,7 +9,7 @@ let print_string_list l =
   Printf.printf "]"
 
 
-module String8 = Encoding.MakeFixedLengthString(struct 
+module String8 = Btree_encoding.MakeFixedLengthString(struct
   let length = 8 
 end)
   

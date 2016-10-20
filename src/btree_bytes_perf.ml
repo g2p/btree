@@ -4,7 +4,7 @@ let make_test_key_val7 s =
   (Printf.sprintf "0%s" s, Printf.sprintf "%s0" s) 
 
 
-module String8 = Encoding.MakeFixedLengthString(struct 
+module String8 = Btree_encoding.MakeFixedLengthString(struct
   let length = 8
 end)
 

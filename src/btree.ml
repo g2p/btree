@@ -1,4 +1,4 @@
-module Int = Encoding.Int64
+module Int = Btree_encoding.Int64
 
 module type Fixed_size_sig = sig 
   type t 
